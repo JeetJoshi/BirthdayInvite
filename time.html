@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Clock/Calender</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./astyle.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="app"  v-bind:style="{backgroundColor: backgroundColor }">
+  <clock ></clock>
+</div>
+
+
+
+
+
+
+
+
+
+<template id="clock-template">
+  <div id="clock">
+    <div id="time">
+      <div id="hour">{{time.hour}}</div>
+      <div class="colon">:</div>
+      <div id="minute">{{time.minute}}</div>
+<!--       <div class="colon">:</div> -->
+<!--       <div id="seconds">{{time.seconds}}</div> -->
+      <div id="denom">{{time.day}}</div>
+    </div>
+    <div id="date">
+      <div id="day">{{date.day}}</div>
+      <div id="month">{{date.month}}</div>
+      <div id="year">{{date.year}}</div>
+    </div>
+  </div>
+</template>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.21/vue.min.js'></script><script  src="./ascript.js"></script>
+
+</body>
+</html>

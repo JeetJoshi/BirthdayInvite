@@ -1,0 +1,94 @@
+html,body{
+  margin:0; 
+  height:100%; 
+  font-family: 'Montserrat', sans-serif;
+  
+}
+#app{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;;
+  background-color: #111;
+  color: #fff;
+  transition: 10s ease-out;
+}
+#clock{
+  --bottom-border: .1em solid white;
+/*   height: 50%; */
+  display:flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 128px;
+  letter-spacing: .2em;
+  text-shadow: 0px 0px .1em rgba(0,0,0,0.25);
+
+  padding: .1em;
+}
+#time{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: var(--bottom-border);
+  font-size: 0.75em;
+  
+}
+#denom{
+  font-size: 0.5em;
+  display: flex;
+  align-items: center;
+  letter-spacing: initial;
+}
+#date{
+  display:flex;
+  flex-flow: column nowrap;
+  
+}
+#date > *{
+  border-bottom: var(--bottom-border);
+  align-self: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#date > *:last-child{
+  border: none;
+}
+#year{
+  align-self: center;
+
+}
+
+.colon{
+  -webkit-animation: blink 1s steps(2) infinite;
+          animation: blink 1s steps(2) infinite;
+}
+@-webkit-keyframes blink{
+  0%{opacity:0}
+  50%{opacity:0}
+  51%{opacity:1}
+  100%{opacity:1}
+}
+@keyframes blink{
+  0%{opacity:0}
+  50%{opacity:0}
+  51%{opacity:1}
+  100%{opacity:1}
+}
+
+@media(max-width: 750px){
+  #clock{
+    font-size: 75px
+  }
+}
+@media(max-width: 500px){
+  #clock{
+    font-size: 60px
+  }
+}
+@media(max-width: 300px){
+  #clock{
+    font-size: 32px
+  }
+}
