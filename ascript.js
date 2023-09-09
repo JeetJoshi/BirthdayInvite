@@ -7,7 +7,7 @@ let clock = Vue.component("clock", {
         hour: 0,
         minute: 0,
         seconds: 0,
-        day: "am"
+        day: "pm"
       },
       date: {
         day: 0,
