@@ -20,7 +20,7 @@ let clock = Vue.component("clock", {
   methods: {
     setTime: function() {
       let date = new Date();
-      let hour = 7;//date.getHours();
+      let hour = 19;//date.getHours();
       let min = 30;//date.getMinutes();
       let sec = 0;//date.getSeconds();
       let parsedSec = 0;
